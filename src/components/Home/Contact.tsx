@@ -12,7 +12,7 @@ const profileImageUrl =
 
 const ContactUs = () => {
 	return (
-		<div className="flex flex-col lg:flex-row items-center min-h h-screen justify-center gap-12 p-8 lg:p-16">
+		<div className="flex flex-col lg:flex-row items-center min-h h-screen justify-center gap-12 p-8 lg:p-16 mb-30">
 			{/* Contact Info Section */}
 			<div className="text-center lg:text-left text-gray-200 space-y-6">
 				<h2 className="text-3xl sm:text-4xl font-bold text-purple-600">
@@ -68,7 +68,7 @@ const ContactUs = () => {
 			</div>
 
 			{/* Profile Image with Animated Gradient */}
-			<div className="relative p-1">
+			<div className="relative p-1 mb-6">
 				<div className="absolute -z-0 flex justify-center items-center top-12 left-10 w-64 h-64 rounded-full border-4 border-dotted border-white animate-spin-slow">
 					<div className="w-56 h-56 rounded-full animate-spin-slow bg-gradient-to-r from-purple-600 to-purple-700" />
 				</div>

@@ -40,9 +40,9 @@ const certifications = [
 
 const Certifications = () => {
 	return (
-		<section className="bg-[#0d0d0d] text-white py-16 px-6">
+		<section className="bg-[#0d0d0d] text-white py-16 px-4 sm:px-6">
 			<div className="max-w-6xl mx-auto">
-				<h2 className="text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-purple-500 to-purple-500 text-transparent bg-clip-text mb-8 text-center">
+				<h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-purple-500 to-purple-500 text-transparent bg-clip-text mb-8 text-center">
 					Certifications
 				</h2>
 
@@ -50,24 +50,30 @@ const Certifications = () => {
 					{certifications.map((cert) => (
 						<motion.div
 							key={cert.id}
-							className=" border border-purple-600 p-6 flex items-start gap-4 shadow-md"
+							className="border border-purple-600 p-4 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start gap-4 shadow-md"
 							whileHover={{ scale: 1.02 }}>
-							<div className="w-36 h-36">
+							<div className="w-24 h-24 sm:w-36 sm:h-36 flex-shrink-0">
 								<Image
 									src={cert.image}
 									alt={cert.title}
-									width={48}
-									height={48}
-									className="rounded-lg"
+									width={144}
+									height={144}
+									className="rounded-lg w-full h-full object-cover"
 								/>
 							</div>
-							<div>
-								<h3 className="text-lg font-semibold">{cert.title}</h3>
-								<p className="text-gray-400 text-sm mb-2">{cert.year}</p>
-								<p className="text-gray-300 text-sm">{cert.description}</p>
+							<div className="text-center sm:text-left">
+								<h3 className="text-base sm:text-lg font-semibold">
+									{cert.title}
+								</h3>
+								<p className="text-gray-400 text-xs sm:text-sm mb-2">
+									{cert.year}
+								</p>
+								<p className="text-gray-300 text-sm sm:text-base">
+									{cert.description}
+								</p>
 								<Link
 									href={cert.certificateLink}
-									className="text-purple-500 hover:underline mt-2 inline-block">
+									className="text-purple-500 hover:underline mt-2 inline-block text-sm sm:text-base">
 									Certificate ↗
 								</Link>
 							</div>
