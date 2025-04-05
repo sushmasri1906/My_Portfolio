@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 const projects = [
 	{
@@ -19,7 +18,7 @@ const projects = [
 		],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1743833975/Screenshot_2025-04-05_114712_qfzldq.png", // Replace with actual image if needed
-		link: "/hex-music.vercel.app/",
+		link: "https://hex-music.vercel.app/",
 	},
 
 	{
@@ -30,7 +29,7 @@ const projects = [
 		technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1741339318/Screenshot_2025-03-07_145105_p5nwh5.png",
-		link: "/projects/jaaaga",
+		link: "https://www.jaaaga.com/",
 	},
 	{
 		id: 3,
@@ -46,7 +45,7 @@ const projects = [
 		],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481857/Screenshot_2025-03-20_201322_tt7msa.png",
-		link: "/projects/independence-day",
+		link: "https://independence78.netlify.app/",
 	},
 	{
 		id: 4,
@@ -66,7 +65,7 @@ const projects = [
 		technologies: ["React.js", "Tailwind CSS", "Recoil", "Framer Motion"],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141216/Screenshot_2025-03-16_213636_ezv4a4.png",
-		link: "/projects/rolan-plast",
+		link: "https://rolanplast.netlify.app/",
 	},
 
 	{
@@ -77,7 +76,7 @@ const projects = [
 		technologies: ["React.js", "Tailwind CSS", "Recoil", "Framer Motion"],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482225/Screenshot_2025-03-20_202010_bjofrz.png",
-		link: "/projects/ecommerce",
+		link: "https://hexaclothes.netlify.app/",
 	},
 	{
 		id: 7,
@@ -93,7 +92,7 @@ const projects = [
 		],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141093/Screenshot_2025-03-16_213423_pzqbep.png",
-		link: "/projects/hexvibe",
+		link: "https://hexvibe.vercel.app/",
 	},
 ];
 const Projects = () => {
@@ -143,11 +142,12 @@ const Projects = () => {
 							</div>
 
 							<div className="mt-4 flex justify-between items-center">
-								<Link
+								<a
+									target="_blank"
 									href={project.link}
 									className="text-purple-500 hover:text-purple-400 transition flex items-center gap-1">
 									View Project →
-								</Link>
+								</a>
 							</div>
 						</motion.div>
 					))}

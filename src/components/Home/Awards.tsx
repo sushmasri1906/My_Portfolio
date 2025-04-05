@@ -13,7 +13,8 @@ const awards = [
 		year: "2024",
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482945/entri_nznslu.jpg",
-		certificateLink: "#",
+		certificateLink:
+			"https://drive.google.com/file/d/14PPilJjlXf8QY9RubPJ6szoyB241yw2Z/view?usp=sharing",
 	},
 ];
 
