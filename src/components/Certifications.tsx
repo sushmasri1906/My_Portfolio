@@ -13,7 +13,8 @@ const certifications = [
 			"I successfully completed the MERN Full Stack Development course at Entri Elevate Software Pvt Ltd, where I gained hands-on experience in building full-stack applications using MongoDB, Express.js, React.js, and Node.js. During the course, I worked on real-world projects that enhanced my skills in front-end and back-end development, RESTful API creation, authentication, database management, and deployment.",
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482945/entri_nznslu.jpg",
-		certificateLink: "#",
+		certificateLink:
+			"https://drive.google.com/file/d/1tP3nOPo5pKUJXU4pjsbiX1xevoYh0xFQ/view?usp=drive_link",
 	},
 	{
 		id: 2,
@@ -34,7 +35,8 @@ const certifications = [
 			"I completed a one-month internship at Entri Elevate, where I gained hands-on experience in full-stack development. During this period, I built a social media application and a movie booking application, applying my skills in MongoDB, Express.js, React.js, and Node.js. This internship strengthened my ability to develop scalable web applications, integrate APIs, and enhance user experience through modern UI/UX practices.",
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482945/entri_nznslu.jpg",
-		certificateLink: "#",
+		certificateLink:
+			"https://drive.google.com/file/d/1nsjeI0Sb6SAf7NNXkOZnXXgmMTfqvtXA/view?usp=drive_link",
 	},
 ];
 
