@@ -25,7 +25,8 @@ const certifications = [
 			"I successfully earned the Full Stack Development (MERN Stack) certification from the Illinois Institute of Technology, showcasing my expertise in MongoDB, Express.js, React.js, and Node.js. This certification reflects my ability to develop dynamic, scalable web applications, implement RESTful APIs, manage databases, and build user-friendly interfaces. It highlights my commitment to continuous learning and staying updated with modern web technologies.",
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482957/illinois_bvdbqe.png",
-		certificateLink: "#",
+		certificateLink:
+			"https://drive.google.com/file/d/1h-tWuHNSZ_2UP8rKp7cVO7LwFisnnQlH/view?usp=sharing",
 	},
 	{
 		id: 3,
