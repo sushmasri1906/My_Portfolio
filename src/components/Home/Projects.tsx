@@ -6,6 +6,71 @@ import Image from "next/image";
 const projects = [
 	{
 		id: 1,
+		title: "Jaaaga Coworking Space Website",
+		description:
+			"A modern coworking space website built with Next.js and TypeScript, featuring interactive UI elements.",
+		technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1741339318/Screenshot_2025-03-07_145105_p5nwh5.png",
+		link: "https://www.jaaaga.com/",
+	},
+	{
+		id: 2,
+		title: "WEN - Women Entrepreneurs Network",
+		category: "Community Platform",
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1744710608/Screenshot_2025-04-15_151906_w836vq.png",
+		link: "https://www.bizwen.site/",
+		description:
+			"A vibrant and inclusive platform built to empower women entrepreneurs through networking, mentorship, knowledge sharing, and global visibility.",
+
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+			"React Icons",
+			"Framer Motion",
+			"Responsive Design",
+		],
+	},
+	
+	{
+		id: 3,
+		title: "Biz-Network",
+		description:
+			"A powerful business-to-business networking platform enabling seamless connections and collaborations among professionals and organizations.",
+		technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Recoil"],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481482/Screenshot_2025-03-20_200747_g8lw3z.png",
+		link: "https://www.bizn.in/",
+	},
+	{
+		id: 4,
+		title: "Rolan Plast Business Website",
+		description:
+			"A dynamic website for a plastic manufacturing company, featuring a responsive UI and smooth animations.",
+		technologies: ["React.js", "Tailwind CSS", "Recoil", "Framer Motion"],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141216/Screenshot_2025-03-16_213636_ezv4a4.png",
+		link: "https://rolanplast.netlify.app/",
+	},
+	{
+		id: 5,
+		title: "Independence Day Theme Website",
+		description:
+			"Celebrates Independence Day with vibrant colors and historical elements. Features a freedom fighters carousel, Hero Banner with a countdown, and a Gallery.",
+		technologies: [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"Tailwind CSS",
+			"Framer Motion",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481857/Screenshot_2025-03-20_201322_tt7msa.png",
+		link: "https://independence78.netlify.app/",
+	},
+	{
+		id: 6,
 		title: "HexMusic Streaming App",
 		description:
 			"A full-featured music streaming platform with real-time playback, artist and album pages, track previews, and Spotify API integration.",
@@ -22,54 +87,7 @@ const projects = [
 	},
 
 	{
-		id: 2,
-		title: "Jaaaga Coworking Space Website",
-		description:
-			"A modern coworking space website built with Next.js and TypeScript, featuring interactive UI elements.",
-		technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1741339318/Screenshot_2025-03-07_145105_p5nwh5.png",
-		link: "https://www.jaaaga.com/",
-	},
-	{
-		id: 3,
-		title: "Independence Day Theme Website",
-		description:
-			"Celebrates Independence Day with vibrant colors and historical elements. Features a freedom fighters carousel, Hero Banner with a countdown, and a Gallery.",
-		technologies: [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Tailwind CSS",
-			"Framer Motion",
-		],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481857/Screenshot_2025-03-20_201322_tt7msa.png",
-		link: "https://independence78.netlify.app/",
-	},
-	{
-		id: 4,
-		title: "Biz-Network",
-		description:
-			"A powerful business-to-business networking platform enabling seamless connections and collaborations among professionals and organizations.",
-		technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Recoil"],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481482/Screenshot_2025-03-20_200747_g8lw3z.png",
-		link: "https://www.bizn.in/",
-	},
-	{
-		id: 5,
-		title: "Rolan Plast Business Website",
-		description:
-			"A dynamic website for a plastic manufacturing company, featuring a responsive UI and smooth animations.",
-		technologies: ["React.js", "Tailwind CSS", "Recoil", "Framer Motion"],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141216/Screenshot_2025-03-16_213636_ezv4a4.png",
-		link: "https://rolanplast.netlify.app/",
-	},
-
-	{
-		id: 6,
+		id: 7,
 		title: "E-Commerce Platform",
 		description:
 			"A scalable eCommerce platform with product listings, cart management, and payment integration.",
@@ -79,7 +97,7 @@ const projects = [
 		link: "https://hexaclothes.netlify.app/",
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "HexVibe Social Media App",
 		description:
 			"A full-stack social media platform with user authentication, profile management, and real-time features.",
