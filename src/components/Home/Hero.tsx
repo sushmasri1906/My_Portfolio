@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
+
 interface HeroProps {
 	profileImage: string;
 }
@@ -54,7 +55,7 @@ const Hero = ({ profileImage }: HeroProps) => {
 						</motion.div>
 						<motion.div whileHover={{ scale: 1.05 }}>
 							<Link
-								href="/resume.pdf"
+								href="/assets/SUSHMASRI.pdf"
 								className="px-6 py-2 text-sm sm:text-md rounded-full bg-white text-purple-600 font-medium hover:bg-gray-100 transition-all shadow-md hover:scale-105">
 								Download Resume
 							</Link>
