@@ -6,13 +6,14 @@ import Skills from "./Skills";
 
 const About: React.FC = () => {
 	return (
-		<div className="flex flex-col items-center justify-center px-6 py-6  text-center">
-			<div className="border border-purple-600 p-12 shadow-lg shadow-purple-600 mb-20">
+		<div className="flex flex-col items-center justify-center px-6 py-12 text-center lg:text-left">
+			{/* About Me Section */}
+			<div className="border border-purple-600 p-8 sm:p-12 shadow-lg shadow-purple-600 mb-16 w-full max-w-5xl">
 				<motion.h2
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.2 }}
-					className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 mb-6">
+					className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 mb-6 text-center">
 					About Me
 				</motion.h2>
 
@@ -20,51 +21,55 @@ const About: React.FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.4 }}
-					className="text-lg text-gray-300 max-w-3xl mb-6">
+					className="text-base sm:text-lg text-gray-300 mb-4 leading-relaxed">
 					I am a passionate{" "}
-					<span className="text-purple-400 font-bold">
-						MERN Stack Developer
+					<span className="text-purple-400 font-bold">Software Developer</span>{" "}
+					with hands-on experience in building dynamic and scalable applications
+					using <span className="text-purple-400 font-semibold">React</span>,{" "}
+					<span className="text-purple-400 font-semibold">Next.js</span>, and{" "}
+					<span className="text-purple-400 font-semibold">
+						Headless CMS like Sanity
 					</span>
-					, currently honing my skills at Entri Elevate. With a strong
-					foundation in programming and problem-solving, I am committed to
-					building efficient and scalable applications.
+					. Currently, I&apos;m working at{" "}
+					<span className="text-purple-400 font-bold">Biz-Link Pvt Ltd</span>,
+					where I&apos;ve contributed to various real-world projects,
+					collaborating closely with teams to deliver impactful solutions.
 				</motion.p>
 
 				<motion.p
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.6 }}
-					className="text-lg text-gray-300 max-w-3xl mb-6">
-					My experience includes hands-on freelancing work, where I contributed
-					to the
-					<span className="text-purple-400 font-bold">
-						{" "}
-						Rolanaplast Project
-					</span>
-					. I played a key role in frontend development, leveraging{" "}
-					<span className="text-purple-400 font-semibold">Recoil</span> for
-					state management and ensuring seamless user experiences.
+					className="text-base sm:text-lg text-gray-300 mb-4 leading-relaxed">
+					Software development isn&apos;t just my profession it7apos;s my{" "}
+					<span className="text-purple-400 font-bold">passion</span>. I enjoy
+					coding, learning new technologies, and turning complex problems into
+					elegant, high-performing solutions. I strive to grow continuously by
+					taking on new challenges that push my technical boundaries.
 				</motion.p>
 
 				<motion.p
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 0.8 }}
-					className="text-lg text-gray-300 max-w-3xl">
-					Driven by a deep passion for software development, I thrive on solving
-					complex problems and continuously evolving in this ever-changing
-					industry. I am always eager to explore new technologies and refine my
-					expertise in full-stack development.
+					className="text-base sm:text-lg text-gray-300 leading-relaxed">
+					My aim is to secure a{" "}
+					<span className="text-purple-400 font-bold">
+						challenging position
+					</span>{" "}
+					in a reputed organization and grow into a higher role by continuously
+					improving my skills, contributing to impactful projects, and staying
+					aligned with emerging tech trends.
 				</motion.p>
 			</div>
 
-			{/* Internship Experience */}
-			<div className="border border-purple-600 p-12 shadow-lg shadow-purple-600 mb-16">
+			{/* Internship Section */}
+			<div className="border border-purple-600 p-8 sm:p-12 shadow-lg shadow-purple-600 mb-16 w-full max-w-5xl">
 				<motion.h2
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 1.0 }}
-					className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600  mb-6">
+					className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 mb-6 text-center">
 					Internship Experience
 				</motion.h2>
 
@@ -72,8 +77,8 @@ const About: React.FC = () => {
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, delay: 1.2 }}
-					className="text-lg text-gray-300 max-w-3xl mb-6">
-					I completed an enriching internship as a{" "}
+					className="text-base sm:text-lg text-gray-300 mb-6 leading-relaxed">
+					I completed a hands-on internship as a{" "}
 					<span className="text-purple-400 font-bold">
 						Full Stack Developer
 					</span>{" "}
@@ -81,43 +86,36 @@ const About: React.FC = () => {
 					<span className="text-purple-400 font-semibold">
 						Entri Elevate Institute
 					</span>
-					, where I contributed to the development of dynamic web applications.
+					. I contributed to a full-featured{" "}
+					<span className="text-purple-400 font-bold">Instagram Clone</span>{" "}
+					named <span className="text-purple-400 font-bold">HexVibe</span> using
+					technologies like{" "}
+					<span className="text-purple-400 font-semibold">Next.js</span>,{" "}
+					<span className="text-purple-400 font-semibold">Recoil</span>,{" "}
+					<span className="text-purple-400 font-semibold">Express.js</span>, and{" "}
+					<span className="text-purple-400 font-semibold">Cloudinary</span>.
 				</motion.p>
 
-				<ul className="list-disc text-left text-gray-300 max-w-3xl space-y-2">
-					<motion.li
-						initial={{ opacity: 0, x: -20 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 1.4 }}
-						className="text-lg">
-						Designed and developed user-friendly frontend components using{" "}
-						<span className="text-purple-400 font-bold">React.js</span> and{" "}
-						<span className="text-purple-400 font-semibold">Tailwind CSS</span>.
-					</motion.li>
-
-					<motion.li
-						initial={{ opacity: 0, x: -20 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 1.6 }}
-						className="text-lg">
-						Developed and optimized backend APIs using{" "}
-						<span className="text-purple-400 font-bold">Express.js</span> and{" "}
-						<span className="text-purple-400 font-semibold">MongoDB</span>.
-					</motion.li>
-
-					<motion.li
-						initial={{ opacity: 0, x: -20 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.8, delay: 1.8 }}
-						className="text-lg">
-						Implemented efficient state management using{" "}
-						<span className="text-purple-400 font-bold">Recoil</span>, improving
-						app performance and user interactions.
-					</motion.li>
+				<ul className="list-disc pl-6 text-left text-gray-300 space-y-3 text-base sm:text-lg">
+					{[
+						"Designed and developed user-friendly frontend components using React.js and Tailwind CSS.",
+						"Developed and optimized backend APIs using Express.js and MongoDB.",
+						"Implemented efficient state management using Recoil for better UX and performance.",
+						"Integrated media upload and storage with Cloudinary for seamless asset handling.",
+					].map((text, index) => (
+						<motion.li
+							key={index}
+							initial={{ opacity: 0, x: -20 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ duration: 0.8, delay: 1.4 + index * 0.2 }}>
+							{text}
+						</motion.li>
+					))}
 				</ul>
 			</div>
-			{/* Skills Component */}
-			<div className="mt-12">
+
+			{/* Skills Section */}
+			<div className="mt-12 w-full max-w-5xl">
 				<Skills />
 			</div>
 		</div>

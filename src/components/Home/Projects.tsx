@@ -1,173 +1,213 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Image from "next/image";
+import EachProject from "./EachProject";
 
 const projects = [
 	{
 		id: 1,
 		title: "Jaaaga Coworking Space Website",
-		description:
-			"A modern coworking space website built with Next.js and TypeScript, featuring interactive UI elements.",
-		technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+		description: `
+			● Developed a modern coworking space platform using Next.js and TypeScript, featuring a dynamic gallery and workspace sections.
+			● Integrated Sanity CMS to allow easy content management, enabling real-time updates for workspace details, images, and pricing.
+			● Designed a responsive interface using Tailwind CSS, ensuring optimal user experience across desktop, tablet, and mobile devices.
+			● Utilized Framer Motion for smooth animations and transitions, enhancing the overall user experience and interaction.
+			● Optimized website performance with Next.js's static site generation for fast load times and better SEO.
+			● Provided an admin interface to manage content, including workspace details, images, and availability, directly from the CMS.`,
+		technologies: [
+			"Next.js",
+			"TypeScript",
+			"Tailwind CSS",
+			"Framer Motion",
+			"Sanity CMS",
+		],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1741339318/Screenshot_2025-03-07_145105_p5nwh5.png",
 		link: "https://www.jaaaga.com/",
+	
 	},
 	{
 		id: 2,
 		title: "WEN - Women Entrepreneurs Network",
 		category: "Community Platform",
+		description: `
+		● Developed a vibrant and inclusive platform to empower women entrepreneurs through networking, mentorship, and global visibility.
+		● Integrated Sanity CMS for seamless content management, enabling dynamic updates to events, blogs, and gallery sections.
+		● Implemented dedicated modules for community events and blog posts, allowing for real-time content publishing.
+		● Designed a dynamic image gallery to showcase community highlights and success stories.
+		● Built with Next.js and Tailwind CSS for fast, responsive, and accessible user experience across devices.
+		● Enhanced interactivity and polish using Framer Motion and React Icons for intuitive UI feedback.
+	`,
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+			"React Icons",
+			"Framer Motion",
+			"Sanity CMS",
+			"Responsive Design",
+		],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1744710608/Screenshot_2025-04-15_151906_w836vq.png",
 		link: "https://www.bizwen.site/",
-		description:
-			"A vibrant and inclusive platform built to empower women entrepreneurs through networking, mentorship, knowledge sharing, and global visibility.",
-
-		technologies: [
-			"Next.js",
-			"Tailwind CSS",
-			"React Icons",
-			"Framer Motion",
-			"Responsive Design",
-		],
+		
 	},
-	
+
 	{
 		id: 3,
 		title: "Biz-Network",
-		description:
-			"A powerful business-to-business networking platform enabling seamless connections and collaborations among professionals and organizations.",
-		technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "Recoil"],
+		category: "B2B Networking Platform",
+		description: `
+		● Developed the frontend of a robust B2B networking platform using Next.js within a Turborepo monorepo architecture.
+		● Integrated RESTful APIs and implemented form validation using Zod for a secure and type-safe user experience.
+		● Collaborated on backend logic using Node.js and Prisma ORM to manage relational data efficiently.
+		● Implemented responsive UI with Tailwind CSS and used React Toastify for real-time feedback and notifications.
+		● Ensured high performance and maintainability through modular architecture and clean code practices.
+	`,
+		technologies: [
+			"Next.js",
+			"Node.js",
+			"Prisma ORM",
+			"Zod",
+			"Turborepo",
+			"Tailwind CSS",
+			"React Toastify",
+		],
 		image:
 			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481482/Screenshot_2025-03-20_200747_g8lw3z.png",
 		link: "https://www.bizn.in/",
+	
 	},
 	{
-		id: 4,
-		title: "Rolan Plast Business Website",
-		description:
-			"A dynamic website for a plastic manufacturing company, featuring a responsive UI and smooth animations.",
-		technologies: ["React.js", "Tailwind CSS", "Recoil", "Framer Motion"],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141216/Screenshot_2025-03-16_213636_ezv4a4.png",
-		link: "https://rolanplast.netlify.app/",
-	},
+	id: 4,
+	title: "Rolan Plast Business Website",
+	category: "Corporate Website",
+	description: `
+		● Developed a responsive and modern frontend website for a plastic manufacturing company to showcase its products and services.
+		● Built with React.js and Tailwind CSS to ensure fast performance, clean design, and cross-device compatibility.
+		● Integrated smooth animations using Framer Motion to enhance user interaction and visual appeal.
+		● Utilized component-based architecture for scalable and maintainable code structure.
+	`,
+	technologies: [
+		"React.js",
+		"Tailwind CSS",
+		"Framer Motion"
+	],
+	image:
+		"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141216/Screenshot_2025-03-16_213636_ezv4a4.png",
+	link: "https://rolanplast.netlify.app/",
+	
+}
+,
+	
 	{
-		id: 5,
-		title: "Independence Day Theme Website",
-		description:
-			"Celebrates Independence Day with vibrant colors and historical elements. Features a freedom fighters carousel, Hero Banner with a countdown, and a Gallery.",
-		technologies: [
-			"HTML",
-			"CSS",
-			"JavaScript",
-			"Tailwind CSS",
-			"Framer Motion",
-		],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481857/Screenshot_2025-03-20_201322_tt7msa.png",
-		link: "https://independence78.netlify.app/",
-	},
-	{
-		id: 6,
-		title: "HexMusic Streaming App",
-		description:
-			"A full-featured music streaming platform with real-time playback, artist and album pages, track previews, and Spotify API integration.",
-		technologies: [
-			"Next.js",
-			"Tailwind CSS",
-			"Zustand",
-			"Spotify API",
-			"React Icons",
-		],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1743833975/Screenshot_2025-04-05_114712_qfzldq.png", // Replace with actual image if needed
-		link: "https://hex-music.vercel.app/",
-	},
+	id: 5,
+	title: "Independence Day Theme Website",
+	category: "Themed Frontend Project",
+	description: `
+		● Designed and developed a visually engaging website to celebrate Independence Day with rich colors and patriotic themes.
+		● Implemented a dynamic hero banner with a live countdown timer to the celebration date.
+		● Created an interactive carousel showcasing freedom fighters, along with a responsive image gallery.
+		● Built using HTML, CSS, JavaScript, and Tailwind CSS for styling, with Framer Motion adding smooth animations and transitions.
+	`,
+	technologies: [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"Tailwind CSS",
+		"Framer Motion"
+	],
+	image:
+		"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481857/Screenshot_2025-03-20_201322_tt7msa.png",
+	link: "https://independence78.netlify.app/",
+	
+},
 
 	{
-		id: 7,
-		title: "E-Commerce Platform",
-		description:
-			"A scalable eCommerce platform with product listings, cart management, and payment integration.",
-		technologies: ["React.js", "Tailwind CSS", "Recoil", "Framer Motion"],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482225/Screenshot_2025-03-20_202010_bjofrz.png",
-		link: "https://hexaclothes.netlify.app/",
-	},
+	id: 6,
+	title: "HexMusic Streaming App",
+	category: "Music Streaming Platform",
+	description: `
+		● Developed a full-featured music streaming platform, offering real-time playback and seamless navigation.
+		● Integrated Spotify API to provide users with access to a vast library of music, artist, and album pages.
+		● Implemented a track preview feature for quick listening, along with dynamic search and real-time updates.
+		● Utilized Next.js for server-side rendering, ensuring fast page loads and improved SEO.
+		● Styled with Tailwind CSS for responsive and modern design, and used Zustand for efficient state management.
+		● Incorporated React Icons for a polished UI and intuitive user experience.
+	`,
+	technologies: [
+		"Next.js",
+		"Tailwind CSS",
+		"Zustand",
+		"Spotify API",
+		"React Icons"
+	],
+	image:
+		"https://res.cloudinary.com/dgulr1hgd/image/upload/v1743833975/Screenshot_2025-04-05_114712_qfzldq.png",
+	link: "https://hex-music.vercel.app/",
+	
+},
+
 	{
-		id: 8,
-		title: "HexVibe Social Media App",
-		description:
-			"A full-stack social media platform with user authentication, profile management, and real-time features.",
-		technologies: [
-			"Next.js",
-			"Express.js",
-			"MongoDB",
-			"Recoil",
-			"Tailwind CSS",
-		],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141093/Screenshot_2025-03-16_213423_pzqbep.png",
-		link: "https://hexvibe.vercel.app/",
-	},
+	id: 7,
+	title: "E-Commerce Platform",
+	category: "E-Commerce Website",
+	description: `
+		● Developed a scalable eCommerce platform with a focus on product listings, cart management, and seamless checkout flow.
+		● Implemented dynamic product display with filters and sorting options to enhance user browsing experience.
+		● Integrated cart management and payment gateway for smooth transactions and user interaction.
+		● Styled the platform using Tailwind CSS for a modern, responsive layout that adapts across devices.
+		● Utilized Recoil for state management, ensuring smooth interactions and updates across the platform.
+		● Enhanced user experience with Framer Motion for animations and transitions throughout the site.
+	`,
+	technologies: [
+		"React.js",
+		"Tailwind CSS",
+		"Recoil",
+		"Framer Motion"
+	],
+	image:
+		"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742482225/Screenshot_2025-03-20_202010_bjofrz.png",
+	link: "https://hexaclothes.netlify.app/",
+	
+}
+,
+	{
+	id: 8,
+	title: "HexVibe Social Media App",
+	category: "Full-Stack Social Media Platform",
+	description: `
+		● Developed a full-stack social media platform with real-time features such as posts, comments, and live updates.
+		● Implemented user authentication and profile management using JWT for secure login and registration.
+		● Built the backend with Express.js and integrated MongoDB for efficient data storage and retrieval.
+		● Utilized Recoil for client-side state management, ensuring smooth interactions and state updates across the app.
+		● Styled the platform using Tailwind CSS for a modern, responsive design across all devices.
+		● Incorporated real-time features like live chat and notifications to enhance user engagement.
+	`,
+	technologies: [
+		"Next.js",
+		"Express.js",
+		"MongoDB",
+		"Recoil",
+		"Tailwind CSS"
+	],
+	image:
+		"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742141093/Screenshot_2025-03-16_213423_pzqbep.png",
+	link: "https://hexvibe.vercel.app/",
+	
+},
+
 ];
+
 const Projects = () => {
 	return (
-		<section className="bg-[#0d0d0d] text-white py-16 px-6">
-			<div className="max-w-6xl mx-auto text-center">
-				<h2 className="text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 text-transparent bg-clip-text mb-4">
+		<section className="pb-12 pt-4">
+			<div className="container mx-auto sm:px-4">
+				<h2 className="text-3xl font-bold text-center text-purple-700 mb-8">
 					Projects
 				</h2>
-				<p className="text-gray-400 text-lg mb-12">
-					I have worked on a wide range of projects, focusing on frontend and
-					backend development. Here are some highlights.
-				</p>
 
-				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-					{projects.map((project) => (
-						<motion.div
-							key={project.id}
-							className="relative border border-purple-600 rounded-2xl p-4 flex flex-col transition-transform duration-300 hover:scale-105"
-							whileHover={{ scale: 1.05 }}>
-							<div className="overflow-hidden ">
-								<Image
-									src={project.image}
-									alt={project.title}
-									width={600}
-									height={300}
-									className="w-full h-56 border border-white rounded-2xl p-1 object-fit"
-								/>
-							</div>
-
-							{/* Content */}
-							<h3 className="text-xl  text-center font-semibold mt-4">
-								{project.title}
-							</h3>
-							<p className="text-gray-400 text-sm mt-2">
-								{project.description}
-							</p>
-
-							<div className="flex flex-wrap gap-2 mt-4 ">
-								{project.technologies.map((tech, index) => (
-									<span
-										key={index}
-										className="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded-full">
-										{tech}
-									</span>
-								))}
-							</div>
-
-							<div className="mt-4 flex justify-between items-center">
-								<a
-									target="_blank"
-									href={project.link}
-									className="text-purple-500 hover:text-purple-400 transition flex items-center gap-1">
-									View Project →
-								</a>
-							</div>
-						</motion.div>
+				<div className="flex flex-col items-center gap-4">
+					{projects.map((project, index) => (
+						<EachProject key={index} project={project} />
 					))}
 				</div>
 			</div>
