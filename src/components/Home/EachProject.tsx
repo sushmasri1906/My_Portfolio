@@ -61,7 +61,7 @@ const EachProject = ({ project }: { project: ProjectType }) => {
 							</a> */}
 						</div>
 					</div>
-					<div className="flex gap-x-2 my-2">
+					<div className="flex flex-wrap gap-2 my-2">
 						{project.technologies.map((tech, index) => (
 							<span
 								key={index}
@@ -70,6 +70,7 @@ const EachProject = ({ project }: { project: ProjectType }) => {
 							</span>
 						))}
 					</div>
+
 					<div className="hidden sm:block">
 						<p className="mt-2 block text-purple-700 hover:text-purple-500">
 							Description
