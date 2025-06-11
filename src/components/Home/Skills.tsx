@@ -15,6 +15,7 @@ import {
 	SiCss3,
 	SiPostman,
 	SiZod,
+	SiSanity,
 } from "react-icons/si";
 
 const skills = [
@@ -65,6 +66,10 @@ const skills = [
 				icon: <SiMongodb size={30} className="text-green-500" />,
 			},
 			{ name: "Zod", icon: <SiZod size={30} className="text-blue-500" /> },
+			{
+				name: "Sanity",
+				icon: <SiSanity size={30} className="text-red-500" />,
+			},
 		],
 	},
 	{

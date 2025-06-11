@@ -71,7 +71,7 @@ const EachProject = ({ project }: { project: ProjectType }) => {
 						))}
 					</div>
 
-					<div className="hidden sm:block">
+					<div className="block">
 						<p className="mt-2 block text-purple-700 hover:text-purple-500">
 							Description
 						</p>
