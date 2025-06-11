@@ -12,9 +12,9 @@ const profileImageUrl =
 
 const ContactUs = () => {
 	return (
-		<div className="flex flex-col lg:flex-row items-center min-h h-screen justify-center gap-12 p-8 lg:p-16 mb-30">
+		<div className="flex flex-col lg:flex-row items-center min-h-screen justify-center gap-12 p-8 lg:p-16 mb-30">
 			{/* Contact Info Section */}
-			<div className="text-center lg:text-left text-gray-200 space-y-6">
+			<div className="text-center lg:text-left text-gray-200 space-y-6 mt-12 lg:mt-0">
 				<h2 className="text-3xl sm:text-4xl font-bold text-purple-600">
 					Let&apos;s Connect
 				</h2>
@@ -55,7 +55,7 @@ const ContactUs = () => {
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}
 							key={index}
-							className="flex items-center space-x-3 p-4 border border-purple-600 backdrop-blur-md  shadow-lg transition">
+							className="flex items-center space-x-3 p-4 border border-purple-600 backdrop-blur-md shadow-lg transition">
 							<span className="text-purple-600">{item.icon}</span>
 							<Link href={item.link} target="_blank">
 								<span className="text-white text-md font-medium">
