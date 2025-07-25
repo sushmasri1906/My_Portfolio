@@ -52,7 +52,7 @@ const Hero = ({ profileImage }: HeroProps) => {
 						</motion.div>
 						<motion.div whileHover={{ scale: 1.05 }}>
 							<Link
-								href="/assets/SUSHMASRI.pdf"
+								href="/assets/SushmaSri_Resume.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="px-6 py-2 text-sm sm:text-base rounded-full bg-white text-purple-600 font-medium hover:bg-gray-100 transition-all shadow-md">
