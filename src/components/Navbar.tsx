@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
 						SushmaSri
 					</Link>
 				</div>
-				<div className="hidden md:flex items-center space-x-5">
+				<div className="hidden lg:flex items-center space-x-5">
 					{navItems.map(({ to, label, icon: Icon }) => (
 						<Link
 							key={label}
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
 						</Link>
 					))}
 				</div>
-				<div className="md:hidden">
+				<div className="lg:hidden">
 					<button
 						onClick={toggleMenu}
 						className="text-white hover:text-purple-500 focus:outline-none">
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
 						initial={{ opacity: 0, y: -10 }}
 						animate={{ opacity: 1, y: 0 }}
 						exit={{ opacity: 0, y: -10 }}
-						className="md:hidden bg-[#0f0f0f] py-2 border-t border-gray-700 absolute top-full left-0 w-full shadow-md z-50">
+						className="bg-[#0f0f0f] py-2 border-t border-gray-700 absolute top-full left-0 w-full shadow-md z-50">
 						<div className="flex flex-col items-center space-y-2">
 							{navItems.map(({ to, label, icon: Icon }) => (
 								<Link
