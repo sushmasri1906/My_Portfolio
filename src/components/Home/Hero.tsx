@@ -11,7 +11,7 @@ interface HeroProps {
 
 const Hero = ({ profileImage }: HeroProps) => {
 	return (
-		<section className="relative flex justify-center items-center px-4 sm:px-8 lg:px-12 py-12 min-h-screen bg-black">
+		<section className="relative flex justify-center items-center px-4 sm:px-8 lg:px-12 py-12 min-h-screen">
 			<div className="w-full flex flex-col lg:flex-row items-center gap-8 sm:gap-12 text-center lg:text-left max-w-6xl mx-auto">
 				<motion.div
 					className="w-full lg:w-3/5"

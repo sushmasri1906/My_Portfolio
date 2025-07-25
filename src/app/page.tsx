@@ -11,12 +11,12 @@ function page() {
 	return (
 		<>
 			<Hero profileImage="https://res.cloudinary.com/dgulr1hgd/image/upload/v1742405197/pi_qsgdmq.png" />
+			<Experience />
+			<Projects />
 			<About />
 			<Certifications />
 			<Awards />
-			<Experience />
-			<Projects />
-      <ContactUs/>
+			<ContactUs />
 		</>
 	);
 }

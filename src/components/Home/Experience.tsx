@@ -14,7 +14,7 @@ const experiences = [
 	},
 	{
 		role: "Frontend Developer | Freelance",
-		duration: "June 2024 - Present",
+		duration: "June 2024 - Feb 2025",
 		description: [
 			"Directed the creation of the frontend for Rolan Plast's web apps.",
 			"Used React.js, Recoil, and Tailwind CSS.",
@@ -36,7 +36,7 @@ const experiences = [
 
 const Experience = () => {
 	return (
-		<section className="bg-[#0d0d0d] text-white py-16 px-4 sm:px-6 lg:px-8">
+		<section className="text-white py-16 px-4 sm:px-6 lg:px-8">
 			<div className="w-full mx-auto text-center">
 				<h2 className="text-4xl font-extrabold bg-gradient-to-r from-purple-400 via-purple-500 to-purple-500 text-transparent bg-clip-text mb-10">
 					Experience

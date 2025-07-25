@@ -4,6 +4,30 @@ import EachProject from "./EachProject";
 
 const projects = [
 	{
+		id: 3,
+		title: "Biz-Network",
+		category: "B2B Networking Platform",
+		description: `
+		● Developed the frontend of a robust B2B networking platform using Next.js within a Turborepo monorepo architecture.
+		● Integrated RESTful APIs and implemented form validation using Zod for a secure and type-safe user experience.
+		● Collaborated on backend logic using Node.js and Prisma ORM to manage relational data efficiently.
+		● Implemented responsive UI with Tailwind CSS and used React Toastify for real-time feedback and notifications.
+		● Ensured high performance and maintainability through modular architecture and clean code practices.
+	`,
+		technologies: [
+			"Next.js",
+			"Node.js",
+			"Prisma ORM",
+			"Zod",
+			"Turborepo",
+			"Tailwind CSS",
+			"React Toastify",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1753430577/Screenshot_2025-07-25_133216_brzqc6.png",
+		link: "https://www.bizn.in/",
+	},
+	{
 		id: 1,
 		title: "Jaaaga Coworking Space Website",
 		description: `
@@ -50,6 +74,124 @@ const projects = [
 	},
 	{
 		id: 2,
+		title: "Influencers Networking",
+		category: "Community Platform",
+		description: `
+● Developed a vibrant and inclusive platform to empower Influencers through networking, mentorship, and global visibility.
+● Integrated Sanity CMS for seamless content management, enabling dynamic updates to events, blogs, and gallery sections.
+● Built dedicated modules for events and blogs, allowing real-time publishing and improved engagement.
+● Created an interactive image gallery to showcase community highlights and success stories.
+● Utilized Next.js and Tailwind CSS to deliver a responsive, fast, and accessible user experience.
+● Enhanced UI feedback and interactivity using Framer Motion and React Icons.
+`,
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+			"Sanity CMS",
+			"Framer Motion",
+			"React Icons",
+			"Responsive Design",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1753430938/Screenshot_2025-07-25_133831_wueolg.png",
+		link: "hhttps://influencers-club.vercel.app/",
+	},
+	{
+		id: 3,
+		title: "VR Agri",
+		category: "Agri-Tech | Virtual Reality",
+		description: `
+● Collaborated with senior developers to build a static frontend for an immersive Agri-Tech platform powered by Virtual Reality (VR).
+● Created responsive layouts using Next.js and Tailwind CSS to simulate a futuristic learning experience for farmers and agri-students.
+● Designed intuitive UI components that visually represent farming scenarios, crop cycles, and equipment interactions.
+● Utilized Framer Motion for smooth UI animations, enhancing the user experience across devices.
+● Structured as a monorepo using Turborepo, enabling scalable code organization and faster development workflows.
+`,
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+
+			"Framer Motion",
+			"Turborepo",
+			"Responsive Design",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1753431191/Screenshot_2025-07-25_134250_fzqtfb.png",
+		link: "https://vr-agri-farms.vercel.app/",
+	},
+	{
+		id: 4,
+		title: "NavaGrameen",
+		category: "Rural Development | Static Website",
+		description: `
+● Designed and developed a static website for NavaGrameen, a social initiative focused on building sustainable and self-reliant rural communities.
+● Showcased key focus areas such as natural farming, green energy, women empowerment, and agri-waste management through structured content sections.
+● Implemented a clean, responsive layout using Next.js and Tailwind CSS, ensuring accessibility across devices and low-bandwidth regions.
+● Highlighted organizational initiatives and programs using visually rich sections including a news/events gallery and impact areas.
+● Collaborated with stakeholders to ensure alignment with the grassroots mission, with clear storytelling and intuitive navigation.
+● Built as a static frontend project optimized for performance and fast deployment.
+`,
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+			"Responsive Design",
+			"Static Site Generation",
+			"SEO Optimization",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1753431842/Screenshot_2025-07-25_135336_pkga9x.png",
+		link: "https://navagrameen.vercel.app/",
+	},
+	{
+		id: 5,
+		title: "Digi Ink",
+		category: "Printing Services | Static Website",
+		description: `
+● Designed and developed a static business website for Sree Creatives, a professional printing service specializing in brochures, ID cards, business cards, banners, and personalized printing solutions.
+● Showcased service offerings and sample works using clean layouts and image galleries for high visual impact.
+● Built with Next.js and Tailwind CSS to ensure fast loading, responsive design, and smooth navigation across desktop and mobile devices.
+● Integrated inquiry-based contact section to allow potential customers to reach out directly for custom quotes and orders.
+● Focused on clarity, accessibility, and modern aesthetics to reflect the creative nature of the business.
+● Optimized for local discovery and client engagement using SEO best practices and structured content.
+`,
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+			"Responsive Design",
+			"Static Site Generation",
+			"SEO Optimization",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1753431994/Screenshot_2025-07-25_135621_dctjpp.png",
+		link: "https://sree-creative.vercel.app/",
+	},
+	{
+		id: 6,
+		title: "Bizry",
+		category: "Digital Marketing Agency | Static Website",
+		description: `
+● Developed a modern, responsive static website for Bizry, a digital marketing agency offering branding, SEO, social media management, and creative strategy services.
+● Designed clean service sections to highlight digital offerings including content marketing, campaign management, and lead generation solutions.
+● Built using Next.js and Tailwind CSS to ensure fast performance, scalability, and accessibility across all screen sizes.
+● Integrated inquiry and contact sections to enable potential clients to connect and request tailored marketing solutions.
+● Focused on brand storytelling, visual clarity, and conversion-oriented design to match agency goals and digital-first identity.
+● Structured as a frontend-only static site and deployed via Turborepo to streamline collaboration with the senior dev team.
+`,
+		technologies: [
+			"Next.js",
+			"Tailwind CSS",
+
+			"Responsive Design",
+			"Static Site Generation",
+			"SEO Optimization",
+		],
+		image:
+			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1753432321/Screenshot_2025-07-25_140147_c9aja4.png",
+		link: "https://www.bizry.shop",
+	},
+
+	{
+		id: 2,
 		title: "Biz Timer – Business Networking Session Timer",
 		description: `
 		● Built a clean and responsive timer app specifically tailored for structured business networking sessions using Next.js and TypeScript.
@@ -72,30 +214,6 @@ const projects = [
 		link: "https://www.biztimer.site/",
 	},
 
-	{
-		id: 3,
-		title: "Biz-Network",
-		category: "B2B Networking Platform",
-		description: `
-		● Developed the frontend of a robust B2B networking platform using Next.js within a Turborepo monorepo architecture.
-		● Integrated RESTful APIs and implemented form validation using Zod for a secure and type-safe user experience.
-		● Collaborated on backend logic using Node.js and Prisma ORM to manage relational data efficiently.
-		● Implemented responsive UI with Tailwind CSS and used React Toastify for real-time feedback and notifications.
-		● Ensured high performance and maintainability through modular architecture and clean code practices.
-	`,
-		technologies: [
-			"Next.js",
-			"Node.js",
-			"Prisma ORM",
-			"Zod",
-			"Turborepo",
-			"Tailwind CSS",
-			"React Toastify",
-		],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1742481482/Screenshot_2025-03-20_200747_g8lw3z.png",
-		link: "https://www.bizn.in/",
-	},
 	{
 		id: 4,
 		title: "Rolan Plast Business Website",
@@ -133,29 +251,29 @@ const projects = [
 		link: "https://independence78.netlify.app/",
 	},
 
-	{
-		id: 6,
-		title: "HexMusic Streaming App",
-		category: "Music Streaming Platform",
-		description: `
-		● Developed a full-featured music streaming platform, offering real-time playback and seamless navigation.
-		● Integrated Spotify API to provide users with access to a vast library of music, artist, and album pages.
-		● Implemented a track preview feature for quick listening, along with dynamic search and real-time updates.
-		● Utilized Next.js for server-side rendering, ensuring fast page loads and improved SEO.
-		● Styled with Tailwind CSS for responsive and modern design, and used Zustand for efficient state management.
-		● Incorporated React Icons for a polished UI and intuitive user experience.
-	`,
-		technologies: [
-			"Next.js",
-			"Tailwind CSS",
-			"Zustand",
-			"Spotify API",
-			"React Icons",
-		],
-		image:
-			"https://res.cloudinary.com/dgulr1hgd/image/upload/v1743833975/Screenshot_2025-04-05_114712_qfzldq.png",
-		link: "https://hex-music.vercel.app/",
-	},
+	// {
+	// 	id: 6,
+	// 	title: "HexMusic Streaming App",
+	// 	category: "Music Streaming Platform",
+	// 	description: `
+	// 	● Developed a full-featured music streaming platform, offering real-time playback and seamless navigation.
+	// 	● Integrated Spotify API to provide users with access to a vast library of music, artist, and album pages.
+	// 	● Implemented a track preview feature for quick listening, along with dynamic search and real-time updates.
+	// 	● Utilized Next.js for server-side rendering, ensuring fast page loads and improved SEO.
+	// 	● Styled with Tailwind CSS for responsive and modern design, and used Zustand for efficient state management.
+	// 	● Incorporated React Icons for a polished UI and intuitive user experience.
+	// `,
+	// 	technologies: [
+	// 		"Next.js",
+	// 		"Tailwind CSS",
+	// 		"Zustand",
+	// 		"Spotify API",
+	// 		"React Icons",
+	// 	],
+	// 	image:
+	// 		"https://res.cloudinary.com/dgulr1hgd/image/upload/v1743833975/Screenshot_2025-04-05_114712_qfzldq.png",
+	// 	link: "https://hex-music.vercel.app/",
+	// },
 
 	{
 		id: 7,

@@ -97,10 +97,10 @@ const Skills: React.FC = () => {
 		<section className="bg-[#0f0f0f] py-16 px-4">
 			<div className="max-w-6xl mx-auto text-center">
 				<h2 className="text-3xl sm:text-4xl font-bold text-white">
-					Tech Stack We Use 🚀
+					Tech Stack I Use 🚀
 				</h2>
 				<p className="text-md sm:text-lg text-white mt-4">
-					Our tech expertise to build powerful and modern web applications.
+					My tech expertise to build powerful and modern web applications.
 				</p>
 
 				{/* Tech Grid */}
